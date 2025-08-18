@@ -17,9 +17,10 @@ export default function About() {
                             <img className="ml-4" src={bulb} alt="bulb" />
                         </div>
                         <p className="text-lightGray">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta temporibus rerum velit aliquid nisi ipsam laboriosam praesentium officiis excepturi. 
-                            Laboriosam, corporis consectetur inventore distinctio commodi amet obcaecati dolores rerum voluptate aspernatur, nulla eligendi incidunt in! Ullam, dolores? 
-                            Possimus at error repellat reprehenderit, cumque, fugiat omnis assumenda odio cum laboriosam deleniti!
+                            I'm Sangay, a Front-End Engineer with 3 years of experience building responsive, high-performance web applications. 
+                            I specialize in Angular and have strong skills in JavaScript. TypeScript, HTML. SCSS. and Tailwind CSS. 
+                            I'm experienced with Angular Material, PrimeNG, and have also worked with NextJs for server-side rendering and React-based projects. 
+                            I focus on clean, scalable code and delivering seamless user experiences in collaborative environments.
                         </p>
                     </div>
                     <img src={curlUp} alt="curl up" />

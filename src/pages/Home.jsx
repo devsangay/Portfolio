@@ -4,6 +4,7 @@ import { BiArrowFromTop } from "react-icons/bi";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "../components/footer/footer";
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <About />
             <Projects />
             <Contact />
+            <Footer />  
         </section>
     )
 }
