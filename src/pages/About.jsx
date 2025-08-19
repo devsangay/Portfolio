@@ -6,7 +6,7 @@ import coder from '../assets/images/coder.png';
 
 export default function About() {
     return (
-        <section className="py-16 w-[90%] m-auto">
+        <section id="about" className="py-16 w-[90%] m-auto">
             <img src={music} alt="music" />
             <div className="flex justify-around items-center mt-8">
                 <div className="flex flex-col items-center space-y-16 w-[22%]">

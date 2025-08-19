@@ -6,7 +6,7 @@ import { BiSend } from 'react-icons/bi';
 
 export default function Contact() {
     return (
-        <section className="py-16">
+        <section id="contact" className="py-16">
             <div className="flex justify-end mb-16">
                 <div className="w-[50%] ml-[100px]">
                     <img src={keyboard} alt="keyboard" />

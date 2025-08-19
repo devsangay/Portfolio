@@ -1,22 +1,32 @@
-import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MENU_ITEMS } from "../../constants/constant";
 
 export default function Navbar() {
+  const handleScroll  = (id) => {
+    const section = document.getElementById(id);
+    section && section.scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <nav className="shadow-sm border-b border-secondary text-lightGray">
       <div className="max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
-          {/* Left: Greeting */}
-          <div className="flex items-center space-x-2 text-lg font-small font-bold">
+          <div className="flex items-center space-x-2 text-lg font-small font-bold cursor-pointer">
             <p>DevSangay</p>
           </div>
 
-          {/* Middle: Menu */}
           <div className="flex space-x-8 font-small">
-            <a href="#about" className="hover:text-gray-600">About</a>
-            <a href="#projects" className="hover:text-gray-600">Projects</a>
-            <a href="#contact" className="hover:text-gray-600">Contact</a>
+            {
+              MENU_ITEMS.filter((item) => item.id !== 'home').map((menu) => {
+                return (
+                  <div className="flex space-x-2 items-center px-2 rounded-3xl text-lightGray text-[18px] cursor-pointer 
+                    relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-cyanTeal after:shadow-[0_0_8px_#22d3ee] after:transition-all after:duration-300 hover:after:w-full" 
+                    key={menu.id}
+                    onClick={() => handleScroll(menu.id)}>
+                    <p>{menu.label}</p>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>

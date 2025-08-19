@@ -3,7 +3,7 @@ import { PROJECTS } from '../constants/constant';
 
 export default function Projects() {
     return (
-        <section className="relative py-16 h-[700px] overflow-hidden">
+        <section id="projects" className="relative py-16 h-[700px] overflow-hidden">
             <img className="absolute -z-10 left-0 right-0 w-full object-cover h-full" src={largeDoodle} alt="large doodle" />
             <div className="flex flex-col justify-center w-[80%] m-auto h-full">
                 <p className="text-lightGray text-[60px] font-bold">My recent <span className="text-secondary">works</span></p>
