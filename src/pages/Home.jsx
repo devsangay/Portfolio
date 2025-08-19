@@ -5,6 +5,14 @@ import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "../components/footer/footer";
+import { motion } from "framer-motion";
+
+const fadeInUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, delay },
+  viewport: { once: true }
+});
 
 export default function Home() {
     return (
@@ -13,9 +21,9 @@ export default function Home() {
             <Navbar />
             <Hero  />
             <div className="w-full flex">
-                <div className="bg-secondary p-[18px] w-fit ml-[28%]">
+                <motion.div {...fadeInUp(0.6)} className="bg-secondary p-[18px] w-fit ml-[28%]">
                     <BiArrowFromTop className="text-lightGray" size={40} />
-                </div>
+                </motion.div>
             </div>
             <About />
             <Projects />
