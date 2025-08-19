@@ -6,7 +6,7 @@ import { BiSend } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
-import { error } from 'console';
+import Toast from '../components/toast-message/toast-message';
 
 const fadeInUp = (delay = 0) => ({
   initial: { opacity: 0, y: 50 },
@@ -22,6 +22,7 @@ export default function Contact() {
         email: "",
         message: ""
     });
+    const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null)
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,12 +39,13 @@ export default function Contact() {
             formRef.current,
             "ZGghFcZzzog-Bf_75"
         ).then(
-            (result) => {
-                alert("Message sent successfully!"),
+            () => {
+                setToast({ message: "Message sent successfully!", type: "success" }),
                 setFormData({name: "", email: "", message: ""}) //reset form
             },
             (error) => {
                 console.log(error);
+                setToast({ message: "Failed to send message", type: "error" })
                 alert("Failed to send message");
             }
         )
@@ -115,6 +117,13 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
+            {toast && (
+                <Toast
+                    message={toast.message}
+                    type={toast.type}
+                    onClose={() => setToast(null)}
+                />
+            )}
         </section>
     )
 }
