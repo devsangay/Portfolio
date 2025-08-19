@@ -2,6 +2,7 @@ import dev from '../../assets/images/person.png';
 import doddle from '../../assets/images/doodles-mixed-round.png';
 import curl from '../../assets/images/curl-arrow.png';
 import { motion } from 'framer-motion';
+import { BiDownload } from 'react-icons/bi';
 
 const fadeInUp = (delay = 0) => ({
   initial: { opacity: 0, y: 50 },
@@ -28,7 +29,7 @@ export default function Hero() {
                     <motion.p {...fadeInUp(0.2)} className="text-cyanTeal">DEVELOPER</motion.p>
                     <motion.div {...fadeInUp(0.4)} className="flex space-x-2 text-[18px] text-lightGray">
                         <button onClick={() => scrollToContact()} className="bg-cyanTeal px-[32px] py-[10px] rounded-full">Contact me</button>
-                        <button className="bg-secondary px-[32px] py-[10px] rounded-full">Download CV</button>
+                        <button className="flex items-center bg-secondary px-[32px] py-[10px] rounded-full">Download CV <BiDownload size={32} className="ml-3" /></button>
                     </motion.div>
                 </div>
             </div>

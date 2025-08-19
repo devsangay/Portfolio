@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
-          <div className="flex items-center space-x-2 text-lg font-small font-bold cursor-pointer">
+          <div className="flex items-center space-x-2 text-[24px] font-small font-bold cursor-pointer">
             <p>DevSangay</p>
           </div>
 
