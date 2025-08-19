@@ -10,7 +10,7 @@ export default function Projects() {
                 <div className="flex space-x-3 justify-between">
                     {
                         PROJECTS.map((project) => (
-                            <div className="w-[25%] bg-secondary/50 rounded-[16px] p-[20px]">
+                            <div className="w-[25%] bg-secondary/50 rounded-[16px] p-[20px]" key={project.name}>
                                 <p className="text-lightGray">{project.name}</p>
                                 <img className="rounded-[8px] object-cover h-[214px]" src={project.image} width={400} height={214} alt={project.name} />
                                 <p className="text-lightGray">{project.description}</p>
