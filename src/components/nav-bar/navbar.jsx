@@ -33,7 +33,7 @@ export default function Navbar() {
                           <p>{menu.label}</p>
                         </div>
                       ) : (
-                        <div onClick={() => window.open("../public/sangay_wangdi(cv).pdf", "_blank")} className="rounded-full cursor-pointer p-2 bg-secondary/50 text-[14px] transition-shadow duration-300 
+                        <div onClick={() => window.open("/sangay_wangdi(cv).pdf", "_blank")} className="rounded-full cursor-pointer p-2 bg-secondary/50 text-[14px] transition-shadow duration-300 
                           hover:shadow-[0_0_15px_rgba(0,255,255,0.7)]">
                             <p>{menu.label}</p>
                         </div>
