@@ -28,8 +28,8 @@ export default function Hero() {
                     <motion.p {...fadeInUp(0.2)} className="text-lightGray">FRONTEND</motion.p>
                     <motion.p {...fadeInUp(0.2)} className="text-cyanTeal">DEVELOPER</motion.p>
                     <motion.div {...fadeInUp(0.4)} className="flex space-x-2 text-[18px] text-lightGray">
-                        <button onClick={() => scrollToContact()} className="bg-cyanTeal px-[32px] py-[10px] rounded-full">Contact me</button>
-                        <button className="flex items-center bg-secondary px-[32px] py-[10px] rounded-full">Download CV <BiDownload size={32} className="ml-3" /></button>
+                        <button onClick={() => scrollToContact()} className="bg-cyanTeal px-[32px] py-[10px] cursor-pointer rounded-full">Contact me</button>
+                        <button onClick={() => window.open("/sangay_wangdi(cv).pdf", "_blank")} className="flex cursor-pointer items-center bg-secondary px-[32px] py-[10px] rounded-full">Download CV <BiDownload size={32} className="ml-3" /></button>
                     </motion.div>
                 </div>
             </div>
