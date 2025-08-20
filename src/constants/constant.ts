@@ -1,3 +1,4 @@
+
 import dev from '../assets/images/developer.jpg';
 import { 
     BiHome, 
@@ -6,7 +7,8 @@ import {
     BiEnvelope, 
     BiLogoFacebook, 
     BiLogoInstagram, 
-    BiLogoLinkedin, 
+    BiLogoLinkedin,
+    BiFile,
     BiLogoTwitter  } from 'react-icons/bi';
 
 export const PROJECTS = [
@@ -47,6 +49,11 @@ export const MENU_ITEMS = [
         label: 'Contact',
         id: 'contact',
         icon: BiEnvelope
+    },
+    {
+        label: 'CV',
+        id: 'cv',
+        icon: BiFile
     }
 ];
 

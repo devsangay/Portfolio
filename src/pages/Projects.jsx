@@ -12,7 +12,7 @@ const fadeInUp = (delay = 0) => ({
 export default function Projects() {
     return (
         <section id="projects" className="relative py-16 h-[700px] overflow-hidden">
-            <motion.img {...fadeInUp(0.2)} className="absolute -z-10 left-0 right-0 w-full object-cover h-full" src={largeDoodle} alt="large doodle" />
+            <motion.img {...fadeInUp(0)} className="absolute -z-10 left-0 right-0 w-full object-cover h-full" src={largeDoodle} alt="large doodle" />
             <div className="flex flex-col justify-center w-[80%] m-auto h-full">
                 <motion.p className="text-lightGray text-[60px] font-bold" {...fadeInUp(0.2)}>
                     My recent 
