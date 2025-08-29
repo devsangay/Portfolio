@@ -26,10 +26,7 @@ export default function Navbar() {
                           relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px]
                         after:bg-cyanTeal after:shadow-[0_0_8px_#22d3ee] after:transition-all after:duration-300 hover:after:w-full" 
                           key={menu.id}
-                          onClick={() => {
-                            setPage("");
-                            handleScroll(menu.id);
-                          }}>
+                          onClick={() => handleScroll(menu.id)}>
                           <p>{menu.label}</p>
                         </div>
                       ) : (
