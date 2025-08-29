@@ -47,10 +47,7 @@ export default function About() {
               className="text-lightGray mt-6 leading-relaxed"
               {...fadeInUp(0.6)}
             >
-              I'm Sangay, a Front-End Engineer with 3 years of experience building responsive, high-performance web applications. 
-              I specialize in Angular and have strong skills in JavaScript, TypeScript, HTML, SCSS, and Tailwind CSS. 
-              I'm experienced with Angular Material, PrimeNG, and have also worked with Next.js for server-side rendering and React-based projects. 
-              I focus on clean, scalable code and delivering seamless user experiences in collaborative environments.
+              I’m a Front-End Engineer with 3 years of experience building responsive, high-performance web applications. I specialize in Angular and have strong skills in JavaScript, TypeScript, HTML, SCSS, and Tailwind CSS. I’m experienced with Angular Material and PrimeNG, and I have also worked with Next.js for server-side rendering and React-based projects. I focus on writing clean, scalable code and delivering seamless user experiences in collaborative environments.
             </motion.p>
           </div>
 

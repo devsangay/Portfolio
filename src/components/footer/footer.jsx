@@ -13,13 +13,27 @@ export default function Footer() {
                         MENU_ITEMS.map((menu) => {
                             const Icon = menu.icon;
                             return (
-                                <div className="flex space-x-2 items-center px-2 rounded-3xl text-lightGray text-[18px] cursor-pointer 
-                                        relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-cyanTeal after:shadow-[0_0_8px_#22d3ee] after:transition-all after:duration-300 hover:after:w-full" 
-                                        key={menu.id}
-                                        onClick={() => handleScroll(menu.id)}>
-                                    <Icon />
-                                    <p>{menu.label}</p>
-                                </div>
+                                <>
+                                    {
+                                        menu.id === 'cv' ? (
+                                            <div className="flex space-x-2 items-center px-2 rounded-3xl text-lightGray text-[18px] cursor-pointer 
+                                                relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-cyanTeal after:shadow-[0_0_8px_#22d3ee] after:transition-all after:duration-300 hover:after:w-full" 
+                                                key={menu.id}
+                                                onClick={() => window.open("/sangay_wangdi(cv).pdf", "_blank")}>
+                                                <Icon />
+                                                <p>{menu.label}</p>
+                                            </div>
+                                        ) : (
+                                            <div className="flex space-x-2 items-center px-2 rounded-3xl text-lightGray text-[18px] cursor-pointer 
+                                                relative transition duration-300 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-cyanTeal after:shadow-[0_0_8px_#22d3ee] after:transition-all after:duration-300 hover:after:w-full" 
+                                                key={menu.id}
+                                                onClick={() => handleScroll(menu.id)}>
+                                                <Icon />
+                                                <p>{menu.label}</p>
+                                            </div>
+                                        )
+                                    }
+                                </>
                             )
                         })
                     }
