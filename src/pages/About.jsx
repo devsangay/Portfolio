@@ -14,22 +14,22 @@ const fadeInUp = (delay = 0) => ({
 
 export default function About() {
   return (
-    <section id="about" className="py-16 w-[90%] m-auto">
+    <section id="about" className="py-4 sm:py-16 w-full sm:w-[90%] m-auto">
       {/* Music Icon */}
       <motion.img 
         src={music} 
         alt="music" 
         {...fadeInUp(0)} 
-        className="mx-auto"
+        className="mx-auto hidden sm:block"
       />
 
-      <div className="flex justify-around items-center mt-8">
+      <div className="flex flex-col sm:flex-row justify-around items-center sm:mt-8">
         {/* Left Text Section */}
-        <div className="flex flex-col items-center space-y-16 w-[22%]">
-          <div>
+        <div className="flex flex-col items-center space-y-16 w-full sm:w-[22%]">
+          <div className="w-full">
             {/* Heading */}
             <motion.div 
-              className="flex text-[64px] text-lightGray font-bold items-center"
+              className="flex text-[50px] sm:text-[64px] text-lightGray font-bold justify-center sm:justify-start items-center w-full"
               {...fadeInUp(0.2)}
             >
               <p>About</p>
@@ -44,10 +44,10 @@ export default function About() {
 
             {/* Paragraph */}
             <motion.p 
-              className="text-lightGray mt-6 leading-relaxed"
+              className="text-lightGray mt-6 leading-relaxed w-full text-center"
               {...fadeInUp(0.6)}
             >
-              I’m a Front-End Engineer with 3 years of experience building responsive, high-performance web applications. I specialize in Angular and have strong skills in JavaScript, TypeScript, HTML, SCSS, and Tailwind CSS. I’m experienced with Angular Material and PrimeNG, and I have also worked with Next.js for server-side rendering and React-based projects. I focus on writing clean, scalable code and delivering seamless user experiences in collaborative environments.
+              Front-End Engineer with more than 3 years of experience specializing in Angular, TypeScript, and modern UI frameworks. Skilled in building responsive, high-performance web applications with a focus on clean, scalable code and seamless user experiences.
             </motion.p>
           </div>
 
@@ -55,24 +55,26 @@ export default function About() {
           <motion.img 
             src={curlUp} 
             alt="curl up" 
+            className="hidden sm:block"
             {...fadeInUp(0.8)}
           />
         </div>
 
         {/* Right Coder Section */}
         <motion.div 
-          className="relative flex flex-col items-center w-[40%]"
+          className="relative flex flex-col items-center w-full sm:w-[40%] mt-1 sm:mt-0"
           {...fadeInUp(1)}
         >
           <motion.img 
             src={coderDoddle} 
+            className="w-[320px] sm:w-[387px] lg:w-auto"
             alt="coder doodle" 
             {...fadeInUp(1.2)}
           />
           <motion.img 
             src={coder} 
             alt="coder" 
-            className="absolute z-10 top-[200px]"
+            className="absolute z-10 top-[35px] sm:top-[200px] w-[200px] sm:w-[387px] lg:w-auto"
             {...fadeInUp(1.4)}
           />
         </motion.div>

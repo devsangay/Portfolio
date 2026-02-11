@@ -53,24 +53,24 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="py-16">
-            <div className="flex justify-end mb-16">
+        <section id="contact" className="py-4 sm:py-16">
+            <div className="flex justify-end mb-1 sm:mb-16">
                 <div className="w-[50%] ml-[100px]">
                     <motion.img {...fadeInUp(0)} src={keyboard} alt="keyboard" />
                 </div>
             </div>
-            <div className="flex w-[80%] m-auto">
-                <div className="w-[44%]">
-                    <motion.p {...fadeInUp(0.2)} className="text-[64px] font-bold text-lightGray">Got a project in <span className="text-secondary">mind?</span></motion.p>
-                    <div className="flex items-center">
-                        <motion.img {...fadeInUp(0.4)} src={curlArrowDown} alt="curl arrow" />
-                        <motion.img {...fadeInUp(0.6)} src={bar} alt="bar" />
+            <div className="flex flex-col sm:flex-row w-full sm:w-[80%] m-auto">
+                <div className="w-full sm:w-[44%]">
+                    <motion.p {...fadeInUp(0.2)} className="text-[50px] sm:text-[64px] font-bold text-lightGray">Got a project in <span className="text-secondary">mind?</span></motion.p>
+                    <div className="flex items-center justify-around sm:justify-start w-full sm:mb-0">
+                        <motion.img {...fadeInUp(0.4)} src={curlArrowDown} className="hidden sm:block" alt="curl arrow" />
+                        <motion.img {...fadeInUp(0.6)} className="w-[50px] sm:w-[387px] lg:w-auto" src={bar} alt="bar" />
                     </div>
                 </div>
-                <div className="w-[50%]">
+                <div className="w-full sm:w-[50%] mt-[12px] sm:mt-0">
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <div className="flex justify-between">
-                            <motion.div {...fadeInUp(0.4)} className="flex flex-col w-[48%]">
+                        <div className="flex flex-col sm:flex-row justify-between">
+                            <motion.div {...fadeInUp(0.4)} className="flex flex-col w-full sm:w-[48%] px-[12px] sm:px-0 mb-[12px] sm:mb-0">
                                 <label className="text-lightGray mb-1" htmlFor="name">Name</label>
                                 <input 
                                     id="name" 
@@ -82,7 +82,7 @@ export default function Contact() {
                                     className="bg-secondary/50 rounded-[16px] h-[40px] pl-3 text-lightGray/50"
                                     required />
                             </motion.div>
-                            <motion.div {...fadeInUp(0.6)} className="flex flex-col w-[48%]">
+                            <motion.div {...fadeInUp(0.6)} className="flex flex-col w-full sm:w-[48%] px-[12px] sm:px-0">
                                 <label className="text-lightGray mb-1" htmlFor="email">Your email</label>
                                 <input 
                                     id="email" 
@@ -95,7 +95,7 @@ export default function Contact() {
                                     required />
                             </motion.div>
                         </div>
-                        <motion.div {...fadeInUp(0.8)} className="flex flex-col mt-4">
+                        <motion.div {...fadeInUp(0.8)} className="flex flex-col mt-4 px-[12px] sm:px-0">
                             <label htmlFor="message" className="text-lightGray mb-1">Your message</label>
                             <textarea 
                                 name="message" 
@@ -107,7 +107,7 @@ export default function Contact() {
                                 className="w-full bg-secondary/50 rounded-[16px] pl-3 pt-3 text-lightGray"
                                 required></textarea>
                         </motion.div>
-                        <motion.button type="submit" {...fadeInUp(1)} className="flex items-center rounded-[24px] bg-cyanTeal text-lightGray mt-4 px-3 py-2">
+                        <motion.button type="submit" {...fadeInUp(1)} className="flex items-center mx-[12px] sm:mx-0 rounded-[24px] bg-cyanTeal text-lightGray mt-4 px-3 py-2">
                             Send Message
                             <BiSend className="size-[24px] -rotate-45 ml-3" />
                         </motion.button>

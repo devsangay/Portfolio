@@ -1,5 +1,6 @@
 
-import dev from '../assets/images/developer.jpg';
+import linkBhutan from '../assets/images/linkbhutan.png';
+
 import { 
     BiHome, 
     BiBriefcase, 
@@ -13,19 +14,10 @@ import {
 
 export const PROJECTS = [
     {
-        name: 'project 1',
-        image: dev,
-        description: 'this is the first project'
-    },
-    {
-        name: 'project 2',
-        image: dev,
-        description: 'this is the second project'
-    },
-    {
-        name: 'project 3',
-        image: dev,
-        description: 'this is the third project'
+        name: 'Travel Agent Website',
+        image: linkBhutan,
+        description: 'Discover the magic of Bhutan through unforgettable, curated travel experiences.',
+        link: 'https://link-bhutan-1-goc4opmrd-sangays-projects-0f9c8b57.vercel.app/'
     }
 ];
 
