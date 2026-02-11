@@ -21,7 +21,7 @@ export default function Home() {
             <Navbar />
             <Hero  />
             <div className="w-full flex">
-                <motion.div {...fadeInUp(0.6)} className="bg-secondary p-[18px] w-fit ml-[28%]">
+                <motion.div {...fadeInUp(0.6)} className="bg-secondary p-[18px] w-fit ml-[20%] sm:ml-[28%]">
                     <BiArrowFromTop className="text-lightGray" size={40} />
                 </motion.div>
             </div>

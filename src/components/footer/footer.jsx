@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <section className="mt-16 border-t border-secondary py-16">
             <div className="flex items-center justify-center">
-                <div className="flex space-x-16">
+                <div className="flex flex-wrap space-x-16">
                     {
                         MENU_ITEMS.map((menu) => {
                             const Icon = menu.icon;
