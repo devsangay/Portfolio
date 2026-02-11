@@ -17,7 +17,7 @@ export const PROJECTS = [
         name: 'Travel Agent Website',
         image: linkBhutan,
         description: 'Discover the magic of Bhutan through unforgettable, curated travel experiences.',
-        link: 'https://link-bhutan-1-goc4opmrd-sangays-projects-0f9c8b57.vercel.app/'
+        link: 'https://link-bhutan-1.vercel.app/'
     }
 ];
 
